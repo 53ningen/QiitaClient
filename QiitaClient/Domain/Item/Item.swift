@@ -11,7 +11,7 @@ public class Item: Entity {
     
     public let id: String
     public let title: String
-    public let user: String
+    public let user: User
     public let url: String
     public let renderedBody: String?
     public let body: String?
@@ -21,7 +21,7 @@ public class Item: Entity {
     public let tags: [String]?
     public let updatedAt: String?
     
-    public init(id: String, title: String, user: String, url: String,
+    public init(id: String, title: String, user: User, url: String,
         renderedBody: String?, body: String?, coediting: Bool?,
         createdAt: String?, isPrivate: Bool?, tags: [String]?, updatedAt: String?) {
             self.id = id

@@ -271,10 +271,13 @@ fi
 				<string>FF1385EE1B3C723800DB33F9</string>
 				<string>FF1385F21B3C729E00DB33F9</string>
 				<string>FF1385F81B3C731900DB33F9</string>
+				<string>FFE800411B3C8B3F009704E9</string>
 				<string>FF1386081B3C795900DB33F9</string>
+				<string>FFE8003F1B3C8B3F009704E9</string>
 				<string>FF1385FC1B3C735700DB33F9</string>
 				<string>FF1385CB1B3C6E4D00DB33F9</string>
 				<string>FF1385C91B3C6E4D00DB33F9</string>
+				<string>FFE800401B3C8B3F009704E9</string>
 			</array>
 			<key>isa</key>
 			<string>PBXSourcesBuildPhase</string>
@@ -981,6 +984,7 @@ fi
 		<dict>
 			<key>children</key>
 			<array>
+				<string>FFE800421B3C8B48009704E9</string>
 				<string>FF1386001B3C73E700DB33F9</string>
 				<string>FF1385F61B3C731100DB33F9</string>
 				<string>FF1385EF1B3C729400DB33F9</string>
@@ -1256,6 +1260,89 @@ fi
 			<string>FF13860A1B3C7D1D00DB33F9</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFE8003C1B3C8B3F009704E9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>User.swift</string>
+			<key>path</key>
+			<string>User.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFE8003D1B3C8B3F009704E9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>UserBuilder.swift</string>
+			<key>path</key>
+			<string>UserBuilder.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFE8003E1B3C8B3F009704E9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>UserId.swift</string>
+			<key>path</key>
+			<string>UserId.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFE8003F1B3C8B3F009704E9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFE8003C1B3C8B3F009704E9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFE800401B3C8B3F009704E9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFE8003D1B3C8B3F009704E9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFE800411B3C8B3F009704E9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFE8003E1B3C8B3F009704E9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFE800421B3C8B48009704E9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>FFE8003C1B3C8B3F009704E9</string>
+				<string>FFE8003D1B3C8B3F009704E9</string>
+				<string>FFE8003E1B3C8B3F009704E9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>User</string>
+			<key>path</key>
+			<string>User</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 	</dict>
 	<key>rootObject</key>

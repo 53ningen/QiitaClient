@@ -27,3 +27,10 @@ func ==(lhs: Bool?, rhs: Bool?) -> Bool {
     else if let r = rhs { return false }
     else { return true }
 }
+
+func ==(lhs: Int?, rhs: Int?) -> Bool {
+    if let l = lhs, r = rhs { return l == r }
+    else if let l = lhs { return false }
+    else if let r = rhs { return false }
+    else { return true }
+}

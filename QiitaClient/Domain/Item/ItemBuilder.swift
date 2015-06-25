@@ -11,7 +11,7 @@ public class ItemBuilder {
     
     public var id: String?
     public var title: String?
-    public var user: String?
+    public var user: User?
     public var url: String?
     public var renderedBody: String?
     public var body: String?
@@ -20,7 +20,7 @@ public class ItemBuilder {
     public var isPrivate: Bool?
     public var tags: [String]?
     public var updatedAt: String?
-    
+
     public func build() -> Item? {
         if let id = id, let title = title, let user = user, let url = url {
             return Item(id: id, title: title, user: user, url: url,
