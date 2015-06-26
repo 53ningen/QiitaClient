@@ -13,5 +13,7 @@ import Foundation
 public protocol QiitaApiClient: Printable {
     
     func getStockersOfItem(itemId: String, page: Int, perPage: Int) -> Observable<GetUsersResult>
+    
+    func getAuthenticatedUser(session: Session?) -> Observable<GetUserResult>
 
 }

@@ -22,6 +22,10 @@ public class DefaultQiitaApiClient: QiitaApiClient {
         return GetStockersItemRequest(itemId: itemId, page: page, perPage: perPage, context: context).invoke()
     }
     
+    public func getAuthenticatedUser(session: Session?) -> Observable<GetUserResult> {
+        return GetAuthenticatedUserRequest(context: context, session: session).invoke()
+    }
+
     public var description: String {
         return "DefaultQiitaApiClient{}"
     }

@@ -15,22 +15,29 @@ public class GetStockersItemRequest: QiitaApiRequest {
     
     private let PARAM_PAGE = "page"
     private let PARAM_PER_PAGE = "per_page"
-    private let FORMAT_URL = "items/%@/stockers"
+    private let HEADER_AUTHORIZATION = "Authorization"
+    private let FORMAT_PATH = "items/%@/stockers"
     
     private let itemId: String
     private let page: Int
     private let perPage: Int
     private let context: RequestContext
+    private let session: Session?
     
-    public init(itemId: String, page: Int, perPage: Int, context: RequestContext) {
+    public init(itemId: String, page: Int, perPage: Int, context: RequestContext, session: Session?) {
         self.itemId = itemId
         self.page = page
         self.perPage = perPage
         self.context = context
+        self.session = session
+    }
+    
+    public convenience init(itemId: String, page: Int, perPage: Int, context: RequestContext) {
+        self.init(itemId: itemId, page: page, perPage: perPage, context: context, session: nil)
     }
     
     public func getUrl() -> String {
-        return context.getUrl(FORMAT_URL, args: itemId)
+        return context.getUrl(FORMAT_PATH, args: itemId)
     }
     
     public func getMethod() ->  Alamofire.Method {
@@ -51,7 +58,8 @@ public class GetStockersItemRequest: QiitaApiRequest {
     }
     
     public func getHeaders() -> [String : AnyObject] {
-        return [:]
+        if let session = session { return [HEADER_AUTHORIZATION : session.accessToken] }
+        else { return [:] }
     }
     
     public func getParameters() -> [String : AnyObject] {

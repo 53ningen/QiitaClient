@@ -17,7 +17,7 @@ public class GetUsersResult: AbstractQiitaApiResult, QiitaApiResult {
     }
     
     public override var description: String {
-        return "GetUserResult{\(super.description)}"
+        return "GetUsersResult{\(super.description)}"
     }
     
 }

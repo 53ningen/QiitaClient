@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        DefaultQiitaApiClient().getStockersOfItem("eed571e0a15a75f41c1f", page: 1, perPage: 20)
+        DefaultQiitaApiClient().getAuthenticatedUser(DefaultSession(accessToken: ""))
             >- subscribe(next: { e in println(e.getContent()) }, error:{  println($0) }, completed: { println("completed")})
     }
 

@@ -14,11 +14,7 @@ public class DefaultRequestContext: RequestContext {
     public init(baseUrl: String) {
         self.baseUrl = baseUrl
     }
-    
-    public func getUrl(path: String) -> String {
-        return baseUrl + path
-    }
-    
+
     public func getUrl(format: String, args: CVarArgType...) -> String {
         return baseUrl + String(format: format, arguments: args)
     }

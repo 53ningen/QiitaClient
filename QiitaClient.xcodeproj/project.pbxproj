@@ -274,6 +274,7 @@ fi
 				<string>FFE8005B1B3D3493009704E9</string>
 				<string>FF1385F21B3C729E00DB33F9</string>
 				<string>FFE8004B1B3D2837009704E9</string>
+				<string>FFE800651B3DACBB009704E9</string>
 				<string>FFE800571B3D2B58009704E9</string>
 				<string>FF1385F81B3C731900DB33F9</string>
 				<string>FFE800411B3C8B3F009704E9</string>
@@ -285,7 +286,10 @@ fi
 				<string>FFE800491B3D26E7009704E9</string>
 				<string>FF1385FC1B3C735700DB33F9</string>
 				<string>FFE8005F1B3D4D89009704E9</string>
+				<string>FFE800631B3DAC6B009704E9</string>
+				<string>FFE800671B3DAFC8009704E9</string>
 				<string>FF1385CB1B3C6E4D00DB33F9</string>
+				<string>FFE800691B3DB079009704E9</string>
 				<string>FF1385C91B3C6E4D00DB33F9</string>
 				<string>FFE800401B3C8B3F009704E9</string>
 			</array>
@@ -1037,6 +1041,8 @@ fi
 				<string>FFE800581B3D33DD009704E9</string>
 				<string>FFE8005A1B3D3493009704E9</string>
 				<string>FFE8005E1B3D4D89009704E9</string>
+				<string>FFE800621B3DAC6B009704E9</string>
+				<string>FFE800641B3DACBB009704E9</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1429,6 +1435,8 @@ fi
 				<string>FFE800541B3D2AF4009704E9</string>
 				<string>FFE800561B3D2B58009704E9</string>
 				<string>FFE8005C1B3D41BB009704E9</string>
+				<string>FFE800661B3DAFC8009704E9</string>
+				<string>FFE800681B3DB079009704E9</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1554,6 +1562,86 @@ fi
 		<dict>
 			<key>fileRef</key>
 			<string>FFE8005E1B3D4D89009704E9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFE800621B3DAC6B009704E9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>Session.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFE800631B3DAC6B009704E9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFE800621B3DAC6B009704E9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFE800641B3DACBB009704E9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>DefaultSession.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFE800651B3DACBB009704E9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFE800641B3DACBB009704E9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFE800661B3DAFC8009704E9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>GetUserResult.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFE800671B3DAFC8009704E9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFE800661B3DAFC8009704E9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FFE800681B3DB079009704E9</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>GetAuthenticatedUserRequest.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FFE800691B3DB079009704E9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FFE800681B3DB079009704E9</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>

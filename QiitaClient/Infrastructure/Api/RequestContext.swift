@@ -9,8 +9,6 @@ import Foundation
 
 public protocol RequestContext: Printable {
     
-    func getUrl(path: String) -> String
-    
     func getUrl(format: String, args: CVarArgType...) -> String
 
 }
