@@ -1410,8 +1410,6 @@ fi
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.swift</string>
-			<key>name</key>
-			<string>StatusCode.swift</string>
 			<key>path</key>
 			<string>StatusCode.swift</string>
 			<key>sourceTree</key>
@@ -1434,8 +1432,6 @@ fi
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
-			<key>name</key>
-			<string>User</string>
 			<key>path</key>
 			<string>User</string>
 			<key>sourceTree</key>

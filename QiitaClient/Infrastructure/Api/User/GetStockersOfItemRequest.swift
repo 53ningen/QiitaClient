@@ -41,10 +41,8 @@ public class GetStockersItemRequest: QiitaApiRequest {
         let request = Alamofire.request(getMethod(), getUrl(), parameters: getParameters(), encoding: ParameterEncoding.URL).request
         return Manager.sharedInstance.session.rx_response(request)
             >- map {
-                (data, response) in
-                let result: GetUsersResult = GetUsersResult(response: response as! NSHTTPURLResponse, data: data)
-                // todo: ここでError検知
-                return result
+                (data: NSData!, response: NSURLResponse!) in
+                GetUsersResult(response: response as! NSHTTPURLResponse, data: data)
             }
     }
     

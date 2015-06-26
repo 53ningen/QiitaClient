@@ -10,10 +10,10 @@ import Foundation
 
 public class GetUsersResult: AbstractQiitaApiResult, QiitaApiResult {
     
-    public typealias RESULT = [User]
+    public typealias RESULT = [User]?
     
     public func getContent() -> RESULT {
-        return UserJsonSupport.json2Users(JSON(data: data))!
+        return UserJsonSupport.json2Users(JSON(data: data))
     }
     
     public override var description: String {
