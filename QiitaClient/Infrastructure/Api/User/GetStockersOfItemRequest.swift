@@ -52,11 +52,7 @@ public class GetStockersItemRequest: QiitaApiRequest {
                 GetUsersResult(response: response as! NSHTTPURLResponse, data: data)
             }
     }
-    
-    public var description: String {
-        return "GetStockersItemRequest{}"
-    }
-    
+
     public func getHeaders() -> [String : AnyObject] {
         if let session = session { return [HEADER_AUTHORIZATION : session.accessToken] }
         else { return [:] }
@@ -67,6 +63,10 @@ public class GetStockersItemRequest: QiitaApiRequest {
             PARAM_PAGE: page,
             PARAM_PER_PAGE: perPage
         ]
+    }
+    
+    public var description: String {
+        return "GetStockersItemRequest{}"
     }
 
 }

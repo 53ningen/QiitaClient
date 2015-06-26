@@ -46,10 +46,6 @@ public class GetAuthenticatedUserRequest: QiitaApiRequest {
         }
     }
     
-    public var description: String {
-        return "GetAuthenticatedUserRequest{}"
-    }
-    
     public func getHeaders() -> [String : AnyObject] {
         if let session = session { return [HEADER_AUTHORIZATION : session.accessToken] }
         else { return [:] }
@@ -57,6 +53,10 @@ public class GetAuthenticatedUserRequest: QiitaApiRequest {
     
     public func getParameters() -> [String : AnyObject] {
         return [:]
+    }
+    
+    public var description: String {
+        return "GetAuthenticatedUserRequest{}"
     }
 
 }
