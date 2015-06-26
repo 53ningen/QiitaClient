@@ -7,6 +7,7 @@ target 'QiitaClient', :exclusive => true do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Alamofire'
+  pod 'SwiftyJSON'
 end
 
 target 'QiitaClientTests' do
