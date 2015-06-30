@@ -4,6 +4,7 @@
 use_frameworks!
 
 target 'QiitaClient', :exclusive => true do
+  pod 'Typhoon'
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Alamofire'

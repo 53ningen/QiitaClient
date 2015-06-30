@@ -19,7 +19,7 @@ public class DefaultRequestContext: RequestContext {
         return baseUrl + String(format: format, arguments: args)
     }
     
-    public var description: String {
+    public override var description: String {
         return "DefaultRequestContext{baseUrl:\(baseUrl)}"
     }
     

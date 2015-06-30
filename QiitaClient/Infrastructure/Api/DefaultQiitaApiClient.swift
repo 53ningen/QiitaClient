@@ -26,7 +26,7 @@ public class DefaultQiitaApiClient: QiitaApiClient {
         return GetAuthenticatedUserRequest(context: context, session: session).invoke()
     }
 
-    public var description: String {
+    public override var description: String {
         return "DefaultQiitaApiClient{}"
     }
     
